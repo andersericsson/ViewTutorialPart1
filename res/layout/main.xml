@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.jayway.viewtutorial.part1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="8dp" >
+
+    <com.jayway.viewtutorial.part1.DurationTextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        app:template="During the last month you have spent &lt;strong>%s&lt;/strong> training in total" />
+
+    <com.jayway.viewtutorial.part1.DurationTextView
+        android:id="@+id/walking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:template="%s was spent walking" />
+
+    <com.jayway.viewtutorial.part1.DurationTextView
+        android:id="@+id/running"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:template="%s was spent running" />
+
+    <com.jayway.viewtutorial.part1.DurationTextView
+        android:id="@+id/cycling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:template="%s was spent cycling" />
+
+    <com.jayway.viewtutorial.part1.DistanceTextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        app:template="In total, %s has been covered" />
+
+</LinearLayout>
